@@ -1,0 +1,741 @@
+/*
+      *************** TABLE OF CONTENTS ***************
+      1.   Fonts
+      2.   Global - Settings
+      3.   Header
+      4.   Section - Top
+      5.   Section - More Information
+      6.   Section - About
+      7.   Section - Convênios
+      8.   Section - Dental Care
+      9.   Section - Question
+      10. Section - Location
+      11. Footer
+      **********************************************************
+*/
+
+
+/*
+*******
+Fonts
+*******
+*/
+
+/* font-family: 'Poppins', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+/*font-family: 'Licorice', cursive;*/
+@import url('https://fonts.googleapis.com/css2?family=Licorice&display=swap');
+
+
+/*
+*******************
+Global - Settings
+*******************
+*/
+
+:root{
+  --primary:#114A91;
+  --secondary: rgb(238, 230, 230);
+  --tertiary:#000;
+}
+
+.main{
+ background-color: #ebedf0;  
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/*Button*/
+
+.btn{
+  background-color:#051937;
+  border: none;
+  border-radius: 0.2rem;
+}
+
+.btn:hover{
+  background-color: #0a2c5f;
+}
+
+.btn--link{
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.3em;
+}
+
+
+/*Medium ≥ 768px*/
+@media (min-width:48rem){
+  
+}
+
+/*Large ≥ 992pxpx*/
+@media (min-width:62rem){
+  .d-flex{
+    display: flex;
+  }
+
+  .d-flex--align-item-center{
+    display: flex;
+    align-items: center;
+  }
+
+  .d-flex--align-item-start{
+    display: flex;
+    align-items: center;
+  }
+
+  .d-flex--align-flex-end{
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .d-flex--justify-content-space-evenly{
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .d-flex--justify-content-space-between{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .d-flex--justify-content-center{
+    display: flex;
+    justify-content: center;
+  }
+}
+
+/*
+********
+Header
+********
+*/
+
+#header{
+  position:absolute;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.295);
+  border-bottom: 1px solid rgba(218, 215, 215, 0.171);
+  height: 3.5rem;
+}
+
+.header-title{
+  font-size: 2.5em;
+  color: var(--secondary);
+  font-family: 'Licorice', cursive;
+}
+
+.header-box--logo{
+  display: none;
+}
+
+.navigation {
+  overflow: hidden;
+}
+
+.navigation--link {
+  float: left;
+  display: block;
+  color: var(--secondary);
+  text-align: center;
+  padding: 0.875rem 1rem;
+  text-decoration: none;
+  font-size: 1.175em;
+}
+
+.navigation--link:hover {
+  background-color: var(--secondary);
+  color: var(--tertiary);
+}
+
+.navigation--link:active {
+  background-color: #114a91;
+  color: white;
+}
+
+.navigation--icon {
+  display: none;
+}
+
+@media screen and (max-width: 48rem) {
+  .navigation--link:not(:first-child) {
+    display: none;
+  }
+
+  .navigation--icon {
+    float: right;
+    display: block;
+    color: #ddd;
+    font-size: 1.3em;
+    padding: 1rem;
+  }
+}
+
+@media screen and (max-width: 48rem) {
+  .responsive {
+    position: relative;
+  }
+
+  .responsive .navigation--icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .responsive .navigation--link {
+    float: none;
+    display: block;
+    text-align: left;
+    background-color:#051937e7;
+  }
+}
+
+@media (min-width:62rem) {
+   .header-box--logo{
+    display: block;
+  } 
+}
+
+/*
+***************
+section - Top
+***************
+*/
+#section-top{
+  background: url("./image/banner-top--small.png") no-repeat center/cover;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.section-top--box{
+  padding: 1rem;
+}
+
+.s-top-box--title{
+  font-size: 2em;
+  color: var(--secondary);
+}
+
+/*button*/
+.s-top-box--button{
+  height: 3rem;
+  width: 90%;
+  margin-top: 1.5rem;
+}
+
+/*Medium ≥ 768px*/
+@media (min-width:48rem){
+  #section-top{  
+    background: url("./image/banner--top.png") no-repeat center/cover;
+    min-height: 60vh;
+  }
+}
+
+/*Large ≥ 992pxpx*/
+@media (min-width:62rem){
+  #section-top{
+    min-height: 100vh;
+  }
+
+  .section-top--box{      
+    padding: 8rem;
+  }
+
+  .s-top-box--title{
+    font-size: 3em;
+  }
+
+  /*button*/
+  .s-top-box--button{
+    height: 3rem;
+    width: 15rem;
+  }
+}
+
+/*
+*********************
+Section - About
+*********************
+*/
+
+#section-about{
+  min-height: 100vh;
+  padding-bottom: 2rem;
+}
+
+#s-about-box--image{
+  background: url("./image/image--.jpg")no-repeat left center/cover;
+  height: 20rem;
+  width: 100%;
+}
+
+#s-about-box--text{
+  width: 90%;
+  margin: auto;
+}
+
+.s-about-box--title{
+  color: var(--primary);
+  font-size: 2.275em;
+  margin: 1rem 0 1rem 0;
+}
+
+.s-about-box--txt{
+  margin-bottom: 1rem;
+}
+
+/*Medium ≥ 768px*/
+@media (min-width:48rem){
+  #s-about-box--image{
+    background: url("./image/image--.jpg")no-repeat bottom center/cover;
+    height: 25rem;
+  }
+}
+
+/*Large ≥ 992pxpx*/
+@media (min-width:62rem){
+  #section-about{
+    padding: 0;
+  }
+
+  #s-about-box--image{
+    background: url("./image/image--.jpg")no-repeat center/cover;
+    height: 30rem;
+  }
+
+  #s-about-box--text{
+    width: 90%;
+    padding: 1rem;
+  }
+
+  .s-about-box--title{
+    color: var(--primary);
+    font-size: 2.275em;
+    margin: 0rem 0rem 1rem 0rem;
+  }
+}
+/*
+******************************
+Section - More Information
+******************************
+*/
+#section-more-information{
+  background: url("./image/image-clinic.png") no-repeat bottom center/cover;
+  background-attachment: fixed;
+  height: 20rem;
+  color: var(--secondary);
+  overflow: hidden;
+}
+
+.s-more-information--box{
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-38%, -50%);
+}
+
+.s-more-information--title{
+  margin-bottom: 0.5rem;
+  font-size: 1.175em;
+}
+
+.s-more-information--subtitle{
+  font-size: 1em;
+  margin-bottom: 1rem;
+}
+
+/*Button*/
+.s-more-information--button{
+  width: 15rem;
+  height: 3rem;
+}
+  
+/*Large ≥ 992pxpx*/
+@media (min-width:62rem){
+  .s-more-information--title{
+    font-size: 2.175em;
+  }
+  
+  .s-more-information--subtitle{
+    font-size: 1.563em;
+  }
+
+  .s-more-information--box{
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-48%, -50%);
+  }
+}
+
+/*
+*********************
+Section - Dental Care
+*********************
+*/
+#section-dental-care{
+ min-height: 100vh;
+ padding-top: 2rem;
+}
+
+#s-dental-care--container{
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  gap: 1rem;
+}
+
+.section-dental-care--title{
+  font-size: 2.175em;
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+
+.section-dental-care--text{
+  font-size: 1.2em;
+  margin-bottom: 1.5rem;
+}
+
+.s-dental-care--card-text{
+  padding: 0.5rem;
+}
+
+.s-dental-card-title{
+  font-size: 1.5em;
+  color: var(--primary);
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+.s-dental--image{
+  height: 15rem;
+}
+
+/*import image*/
+#s-dental-care--card-image-01{
+  background: url("./image/implate.jpg") no-repeat center/cover;
+}
+
+#s-dental-care--card-image-02{
+  background: url("./image/protese.jpg") no-repeat center/cover;
+}
+
+#s-dental-care--card-image-03{
+  background: url("./image/ortodontia.jpg") no-repeat center/cover;
+}
+
+#s-dental-care--card-image-04{
+  background: url("./image/reabilitacao.jpg") no-repeat center/cover;
+}
+
+#s-dental-care--card-image-05{
+  background: url("./image/endodontia.jpg") no-repeat center/cover;
+}
+
+#s-dental-care--card-image-06{
+  background: url("./image/periodontia.jpg") no-repeat center/cover;
+}
+
+#s-dental-care--card-image-07{
+  background: url("./image/clareamento.jpg") no-repeat center/cover;
+}
+
+/*Medium ≥ 768px*/
+@media (min-width:48rem){
+  #s-dental-care--container{
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+
+/*Large ≥ 992pxpx*/
+@media (min-width:62rem){
+  #s-dental-care--container{
+    grid-template-columns: repeat(3,1fr);
+  }
+
+  .section-dental-care--text{
+    width: 60%;
+    text-align: center;
+  }
+}
+
+/*
+*********************
+Section - convênios
+*********************
+*/
+#section-convenios{
+  padding: 2rem 0 2rem 0;
+  width: 97%;
+  margin: auto;
+}
+
+#section-convenios--box-image{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  align-items: center;
+  gap: 1rem;
+}
+
+/*import image*/
+#s-convenios--box-image-01{
+background: url("./image/Amil_dental.png")no-repeat center/cover;
+}
+
+#s-convenios--box-image-02{
+background: url("./image/Bradesco-Dental.png")no-repeat center/cover;
+}
+
+#s-convenios--box-image-03{
+background: url("./image/Porto-Odonto.png")no-repeat center/cover;
+}
+
+#s-convenios--box-image-04{
+background: url("./image/logo-odontoprev.png")no-repeat center/cover;
+}
+
+.s-convenios--box-image{
+  width: 7rem;
+  height: 7rem;
+}
+
+.s-convenios--box-title{
+  font-size: 2.175em;
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+
+.s-convenios--box-subtitle{
+  font-size: 1.175em;
+  font-weight: 100;
+}
+
+/*Medium ≥ 768px*/
+@media (min-width:48rem){
+  #section-convenios--box-image{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+  }
+}
+
+/*Large ≥ 992pxpx*/
+@media (min-width:62rem){
+  #section-convenios{
+    width: 100%;
+  }
+
+  #section-convenios--box-text{
+    width: 30%;
+    padding: 1rem 6rem;
+  } 
+
+  .s-convenios--box-image{
+    width: 10rem;
+    height: 10rem;
+  }
+}
+
+/*
+*********************
+Section - Question
+*********************
+*/
+
+#section-question{
+  background-image: linear-gradient(to right top, #051937, #08244c, #0b3162, #0e3d79, #114a91);
+  padding-bottom: 3rem;
+  color: #fff;
+}
+
+#section-question--image{
+  background: #fff url("./image/image-question.jpg") no-repeat right/cover;
+  height: 20rem;
+  width: 100%;
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.37);
+}
+
+#s-question--box-description{
+  width: 90%;
+  margin: auto;
+  padding-top: 3rem;
+}
+
+.border-bottom{
+  border: 1px solid rgba(48, 104, 131, 0.185);
+  width: 100%;
+  margin: 1rem auto;
+}
+
+.s-question--box-description-title{
+  font-size: 1.75em;
+}
+
+.s-question--box-description-txt{
+  margin-top: 0.5rem;
+}
+
+.section-question--title{
+  font-size: 2.125em;
+  text-align: center;
+  padding: 2rem 0rem 1em 0rem;
+}
+/*Large ≥ 992pxpx*/
+@media (min-width:62rem){
+  #section-question--image{
+    width: 40rem;
+    height: 25rem;
+    border-radius: 0.5rem;
+  }
+
+  #s-question--box-description{
+    width: 34%;
+    margin: 0;
+    padding-top: 0rem;
+  }
+}
+
+/*
+**********************
+Section -- Location
+**********************
+*/
+#section-location{
+ min-height: 100vh;
+ padding: 1rem 0rem 0rem 0rem;
+}
+
+#s-location--box-text{
+  text-align: center;
+  color: var(--primary);  
+}
+
+#section-location--address{
+  background-color: #E0EEFF;
+  color: var(--primary);
+  padding: 3rem 0rem 3rem 0rem;
+}
+
+.s-location-box-text--title{
+  text-transform: uppercase;
+  font-weight: 100;
+}
+
+.s-location-box-text--subtitle{
+  font-weight: 900;
+  font-size: 1.5em;
+  margin:1rem 0rem  1rem 0rem;
+}
+
+.s-location-address--title{
+  font-weight: 900;
+  font-size: 1.5em;
+  margin-bottom: 1rem;
+}
+
+.s-location-map--google-maps{
+  width: 100%;
+  height: 28.125rem;
+  border: none;
+}
+
+/*Medium ≥ 768px*/
+@media (min-width:48rem){
+  #section-location--address{
+    padding: 3rem 0rem 3rem 2rem;  
+    width: 46rem;
+  }
+}
+
+/*Large ≥ 992pxpx*/
+@media (min-width:62rem){
+  #section-location{
+    padding: 0rem ;
+  }
+
+  #s-location--box-text{
+    margin-bottom: 1.725rem;
+  }
+
+  #section-location--address{
+    width: 30rem;
+    padding: 3rem 2rem 3rem 2rem;
+  }
+
+ .s-location-box-text--subtitle{
+    font-size: 2.125em;
+  }
+
+  .s-location-map--google-maps{
+    width: 37.5rem;
+  }
+}
+
+/*
+********
+Footer
+********
+*/
+#footer{
+  background-image: linear-gradient(to right top, #051937, #08244c, #0b3162, #0e3d79, #114a91);
+  color: #fff;
+  padding: 1rem 0rem 0rem 0rem;
+}
+
+.f-box{
+ margin-bottom: 1.6rem;
+ padding: 0rem 0.5rem 0rem 0.5rem;
+}
+
+.footer--title{
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.f-title{
+  font-size: 2em;
+  font-family: 'Licorice', cursive;
+  letter-spacing: 0.2rem;
+}
+
+.footer--subtitle{
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+}
+
+.footer--txt{
+  font-size: 1rem;
+}
+
+#footer--bottom{
+  padding: 0.3rem 1rem;
+  border-top: 1px solid rgba(128, 128, 128, 0.356);
+}
+
+/*Medium ≥ 768px*/
+@media (min-width:48rem){
+  #footer-top{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/*Large ≥ 992pxpx*/
+@media (min-width:62rem){
+  #footer-top{
+    display: flex;
+  }
+
+  .f-box{
+    width: 20%;
+  }
+}
