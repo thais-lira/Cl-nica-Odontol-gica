@@ -1,2 +1,2 @@
-# Clínica-Odontol-gica
+# Clínica-Odontológica
 Landing Page personalizada para o consultório odontológico.
